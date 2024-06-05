@@ -1,18 +1,137 @@
 ---
-
+const email = "r10progress@lakur.tech";
+const year = new Date().getFullYear();
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>R10Progress</title>
-	</head>
-	<body>
-		<h1>Welcome to R10Progress!</h1>
-		<a href="https://app.r10progress.com">
-			Go to the app
-		</a>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>R10Progress</title>
+  </head>
+  <body>
+    <section id="hero">
+      <h1>Welcome to R10Progress!</h1>
+      <a class="button main" href="https://app.r10progress.com">
+        Go to the app
+      </a>
+    </section>
+    <section id="features">
+      <h2>Features</h2>
+      <p>
+        R10Progress is a simple tool to help you track your progress and goals
+        when using the Garmin Approach R10 Golf Radar.
+      </p>
+      <ul>
+        <li>Visualize your data</li>
+        <li>Track your progress</li>
+        <li>Set goals</li>
+      </ul>
+
+      <h3>Visualization</h3>
+      <p>
+        Visualize your data in a simple and easy to understand way. See your
+        progress over time and compare it to your goals.
+      </p>
+      <img
+        alt="Screenshot of the visualization page in R10Progress for Garmin Approach R10 Golf Radar"
+        src="/images/visualization.png"
+        alt="Visualization"
+      />
+
+      <h3>Progress Tracking</h3>
+      <p>
+        Track your progress over time. See how you are improving and where you
+        need to focus your efforts.
+      </p>
+      <img
+        alt="Screenshot of the progress tracking page in R10Progress for Garmin Approach R10 Golf Radar"
+        src="/images/progress.png"
+        alt="Progress Tracking"
+      />
+
+      <h3>Goal Setting</h3>
+      <p>
+        Set goals for yourself and track your progress towards them. Stay
+        motivated and focused on your goals.
+      </p>
+      <img
+        alt="Screenshot of the goal setting page in R10Progress for Garmin Approach R10 Golf Radar"
+        src="/images/goals.png"
+        alt="Goal Setting"
+      />
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        If you have any questions or feedback, please contact us at
+        <a href={`mailto:${email}`}>{email}</a>.
+      </p>
+    </section>
+    <footer>
+      <p>© {year} R10Progress</p>
+      <p>
+        <a href="/imprint">Imprint</a>
+      </p>
+    </footer>
+  </body>
 </html>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  #hero {
+    background-color: #f0f0f0;
+    text-align: center;
+  }
+
+  #features {
+    background-color: #f8f8f8;
+  }
+
+  #features img {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    display: block;
+  }
+
+  #contact {
+    background-color: #f0f0f0;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+
+    .main {
+      background-color: #007bff;
+    }
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+
+  footer {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+</style>
