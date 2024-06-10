@@ -29,38 +29,70 @@ const year = new Date().getFullYear();
         <li>Set goals</li>
       </ul>
 
-      <h3>Visualization</h3>
-      <p>
-        Visualize your data in a simple and easy to understand way. See your
-        progress over time and compare it to your goals.
-      </p>
-      <img
-        alt="Screenshot of the visualization page in R10Progress for Garmin Approach R10 Golf Radar"
-        src="/images/visualization.png"
-        alt="Visualization"
-      />
-
-      <h3>Progress Tracking</h3>
-      <p>
-        Track your progress over time. See how you are improving and where you
-        need to focus your efforts.
-      </p>
-      <img
-        alt="Screenshot of the progress tracking page in R10Progress for Garmin Approach R10 Golf Radar"
-        src="/images/progress.png"
-        alt="Progress Tracking"
-      />
-
-      <h3>Goal Setting</h3>
-      <p>
-        Set goals for yourself and track your progress towards them. Stay
-        motivated and focused on your goals.
-      </p>
-      <img
-        alt="Screenshot of the goal setting page in R10Progress for Garmin Approach R10 Golf Radar"
-        src="/images/goals.png"
-        alt="Goal Setting"
-      />
+      <div class="images-container">
+        <div>
+          <h4>Averages per Session</h4>
+          <p>
+            See the averages of your data per session. Compare your current
+            session to your previous sessions. Choose freely what data and club
+            you want to see.
+          </p>
+          <img
+            alt="Screenshot showing the Averages per Session graph in R10Progress for Garmin Approach R10 Golf Radar"
+            src="/assets/averagespersession.png"
+          />
+        </div>
+        <div>
+          <h4>Shot Dispersion Graph</h4>
+          <p>
+            See the shot dispersion of your shots, shown by club type. Compare
+            your shot lengths and directions to see where you need to improve.
+            You can also remove outliers using IQR filtering or just focus on
+            the above average shots.
+          </p>
+          <img
+            alt="Screenshot showing the Shot Dispersion graph in R10Progress for Garmin Approach R10 Golf Radar"
+            src="/assets/shotdispersion.png"
+          />
+        </div>
+        <div>
+          <h4>Shot Scatter Plot</h4>
+          <p>
+            See the shot scatter plot of your shots and compare the relationship
+            between two data points to see if there is a correlation between
+            them. For example, you can compare the relationship between your
+            club speed and shot distance or maybe your club path and the
+            sidespin or deviation distance!
+          </p>
+          <img
+            alt="Screenshot showing the Shot Scatter Plot in R10Progress for Garmin Approach R10 Golf Radar"
+            src="/assets/shotscatterplot.png"
+          />
+        </div>
+        <div>
+          <h3>Table views</h3>
+          <p>
+            Track your shots and averages over table views. See your data in a
+            compact and easy to read way.
+          </p>
+          <img
+            alt="Screenshot of the table view in R10Progress for Garmin Approach R10 Golf Radar"
+            src="/assets/averagestable.png"
+          />
+        </div>
+        <div>
+          <h3>Goal Setting</h3>
+          <p>
+            Set goals for yourself and track your progress towards them. Stay
+            motivated and focused on your goals.
+          </p>
+          <img
+            alt="Screenshot of the goal setting page in R10Progress for Garmin Approach R10 Golf Radar"
+            src="/images/goals.png"
+            alt="Goal Setting"
+          />
+        </div>
+      </div>
     </section>
 
     <section id="contact">
@@ -124,6 +156,11 @@ const year = new Date().getFullYear();
     &:hover {
       background-color: #0056b3;
     }
+  }
+  .images-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
+    gap: 2rem;
   }
 
   footer {
