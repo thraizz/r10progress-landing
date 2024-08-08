@@ -1,61 +1,8 @@
 ---
-const email = "r10progress@lakur.tech";
-const year = new Date().getFullYear();
+import BaseLayout from '../layout/BaseLayout.astro'
 ---
-
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="generator" content={Astro.generator} />
-    <script
-      defer
-      data-domain="r10progress.com"
-      data-api="/api/wildflower/event"
-      src="/api/wildflower/script.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      R10Progress - Track Your Progress and Goals with Garmin Approach R10
-    </title>
-    <meta
-      name="description"
-      content="R10Progress is a simple tool to help you track your progress and goals using the Garmin Approach R10 Golf Radar. Visualize your data, track your progress, and set goals with ease."
-    />
-    <meta
-      name="keywords"
-      content="R10Progress, Garmin Approach R10, Golf Radar, progress tracking, goal setting, data visualization, golf improvement"
-    />
-    <meta name="author" content="R10Progress" />
-    <meta
-      property="og:title"
-      content="R10Progress - Track Your Progress and Goals with Garmin Approach R10"
-    />
-    <meta
-      property="og:description"
-      content="R10Progress is a simple tool to help you track your progress and goals using the Garmin Approach R10 Golf Radar. Visualize your data, track your progress, and set goals with ease."
-    />
-    <meta
-      property="og:image"
-      content="https://r10progress.com/assets/shotdispersion.png"
-    />
-    <meta property="og:url" content="https://r10progress.com/" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="R10Progress - Track Your Progress and Goals with Garmin Approach R10"
-    />
-    <meta
-      name="twitter:description"
-      content="R10Progress is a simple tool to help you track your progress and goals using the Garmin Approach R10 Golf Radar. Visualize your data, track your progress, and set goals with ease."
-    />
-    <meta
-      name="twitter:image"
-      content="https://r10progress.com/images/visualization.png"
-    />
-    <link rel="canonical" href="https://r10progress.com/" />
-    <link rel="icon" href="https://r10progress.com/favicon.ico" />
-  </head>
-  <body>
+<BaseLayout>
+  <div class="container">
     <section id="hero">
       <h1>Welcome to R10Progress!</h1>
       <a class="button main" href="https://app.r10progress.com">
@@ -139,81 +86,25 @@ const year = new Date().getFullYear();
         </div>
       </div>
     </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
+    <section id="releases">
+      <h2>Releases</h2>
       <p>
-        If you have any questions or feedback, please contact us at
-        <a href={`mailto:${email}`}>{email}</a>.
+        R10Progress is a web app to help you track your progress and goals when
+        using the Garmin Approach R10 Golf Radar. It is currently in beta and
+        under active development. You can read more about the latest releases
+        <a href="/release">here</a>.
       </p>
-    </section>
-    <footer>
-      <p>© {year} R10Progress</p>
-      <p>
-        <a href="/imprint">Imprint</a>
-      </p>
-    </footer>
-  </body>
-</html>
+  </section>
+  </div>
+</BaseLayout>
 
 <style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  & > *:nth-child(even) {
+    background-color: #f9f9f9;
   }
-
-  section {
-    padding: 20px;
-  }
-
-  #hero {
-    background-color: #f0f0f0;
-    text-align: center;
-  }
-
-  #features {
-    background-color: #f8f8f8;
-  }
-
-  #features img {
-    width: 100%;
-    max-width: 600px;
-    margin: 20px auto;
-    display: block;
-  }
-
-  #contact {
-    background-color: #f0f0f0;
-  }
-
-  .button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-
-    .main {
-      background-color: #007bff;
-    }
-    &:hover {
-      background-color: #0056b3;
-    }
-  }
-  .images-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
-    gap: 2rem;
-  }
-
-  footer {
-    background-color: #f8f8f8;
-    text-align: center;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-  }
+}
 </style>
