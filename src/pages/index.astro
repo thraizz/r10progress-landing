@@ -1,6 +1,7 @@
 ---
-import BaseLayout from '../layout/BaseLayout.astro'
+import BaseLayout from "../layout/BaseLayout.astro";
 ---
+
 <BaseLayout>
   <div class="container">
     <section id="hero">
@@ -12,8 +13,8 @@ import BaseLayout from '../layout/BaseLayout.astro'
     <section id="features">
       <h2>Features</h2>
       <p>
-        R10Progress is a simple tool to help you track your progress and goals
-        when using the Garmin Approach R10 Golf Radar.
+        R10Progress is a web application to help you visualize shots, track your
+        progress and goals captured with Garmin Approach R10 Golf Radar.
       </p>
       <ul>
         <li>Visualize your data</li>
@@ -89,22 +90,22 @@ import BaseLayout from '../layout/BaseLayout.astro'
     <section id="releases">
       <h2>Releases</h2>
       <p>
-        R10Progress is a web app to help you track your progress and goals when
-        using the Garmin Approach R10 Golf Radar. It is currently in beta and
-        under active development. You can read more about the latest releases
+        R10Progress is under active development. If you have feature requests or
+        find issues, be sure to mail me using the mail below! You can read more
+        about the latest releases
         <a href="/release">here</a>.
       </p>
-  </section>
+    </section>
   </div>
 </BaseLayout>
 
 <style>
-.container {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  & > *:nth-child(even) {
-    background-color: #f9f9f9;
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    & > *:nth-child(even) {
+      background-color: #f9f9f9;
+    }
   }
-}
 </style>
