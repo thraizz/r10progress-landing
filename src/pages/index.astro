@@ -1,99 +1,215 @@
 ---
 import BaseLayout from "../layout/BaseLayout.astro";
+
+const title = "R10Progress: Advanced Golf Analytics for Garmin R10 Users";
+const description =
+  "Transform your Garmin R10 data into actionable golf insights with R10Progress. Free, open-source analytics tool for tracking progress, visualizing shot patterns, and improving your golf game.";
 ---
 
-<BaseLayout>
+<BaseLayout title={title} description={description}>
   <div class="container">
-    <section id="hero">
-      <h1>Welcome to R10Progress!</h1>
-      <a class="button main" href="https://app.r10progress.com">
-        Go to the app
-      </a>
-    </section>
-    <section id="features">
-      <h2>Features</h2>
-      <p>
-        R10Progress is a web application to help you visualize shots, track your
-        progress and goals captured with Garmin Approach R10 Golf Radar.
+    <section id="hero" aria-label="Introduction to R10Progress">
+      <h1>R10Progress: Advanced Golf Analytics for Garmin R10 Users</h1>
+      <p class="hero-subtitle">
+        Looking for better insights from your Garmin R10 launch monitor? My
+        free, open-source golf analytics platform transforms raw data into
+        actionable improvements for your game.
       </p>
-      <ul>
-        <li>Visualize your data</li>
-        <li>Track your progress</li>
-        <li>Set goals</li>
+      <a
+        class="button main"
+        href="https://app.r10progress.com"
+        aria-label="Start using R10Progress"
+      >
+        Start Analyzing Your Golf Data
+      </a>
+      <p
+        class="open-source-note"
+        style="display: flex; gap: 1rem; flex-direction: column;"
+      >
+        <span class="highlight">✨ Free & Open Source Golf Analytics ✨</span>
+        <span class="small-text"
+          >(Premium AI swing analysis available through optional donations)</span
+        >
+      </p>
+    </section>
+
+    <section id="about" aria-label="About R10Progress">
+      <h2>Why Garmin R10 Users Need Better Golf Analytics</h2>
+      <p>
+        As a fellow Garmin R10 user, I found the standard app's analytics too
+        limited for serious improvement. That's why I created R10Progress - a
+        comprehensive golf data analysis tool designed specifically for Garmin
+        R10 users who want to take their game to the next level.
+      </p>
+      <p>
+        Unlike corporate golf software, R10Progress is a passion project built
+        by me, a golfer, for other golfers. The open-source approach means the
+        entire golf community can contribute to making it even better!
+      </p>
+    </section>
+
+    <section id="features" aria-label="R10Progress Features">
+      <h2>Essential Golf Analytics Features for Garmin R10 Users</h2>
+      <p>
+        I've designed R10Progress to transform your Garmin R10 data into
+        meaningful insights with powerful visualization tools, progress
+        tracking, and detailed analytics - all presented in golfer-friendly
+        language without the technical jargon.
+      </p>
+      <ul class="feature-list">
+        <li>
+          <strong>Visual Shot Analysis</strong> - Transform raw Garmin R10 data into
+          intuitive visual representations
+        </li>
+        <li>
+          <strong>Golf Performance Tracking</strong> - Monitor your improvement with
+          detailed metrics over time
+        </li>
+        <li>
+          <strong>Club Comparison Analytics</strong> - Identify your strongest and
+          weakest clubs with data-driven insights
+        </li>
+        <li>
+          <strong>Personalized Golf Goals</strong> - Set and track achievable targets
+          based on your actual performance
+        </li>
+        <li>
+          <strong>Swing Pattern Recognition</strong> - Identify the root causes of
+          common swing issues like slices and hooks
+        </li>
       </ul>
 
       <div class="images-container">
         <div>
-          <h4>Averages per Session</h4>
+          <h3>Golf Session Dashboard</h3>
           <p>
-            See the averages of your data per session. Compare your current
-            session to your previous sessions. Choose freely what data and club
-            you want to see.
+            Compare your latest range session against your historical
+            performance with my intuitive dashboard. Spot trends and
+            improvements without needing to be a statistics expert.
           </p>
           <img
-            alt="Screenshot showing the Averages per Session graph in R10Progress for Garmin Approach R10 Golf Radar"
+            alt="R10Progress golf session dashboard showing comprehensive Garmin R10 statistics"
             src="/assets/averagespersession.png"
+            loading="lazy"
+            width="600"
+            height="400"
           />
         </div>
         <div>
-          <h4>Shot Dispersion Graph</h4>
+          <h3>Golf Shot Dispersion Analysis</h3>
           <p>
-            See the shot dispersion of your shots, shown by club type. Compare
-            your shot lengths and directions to see where you need to improve.
-            You can also remove outliers using IQR filtering or just focus on
-            the above average shots.
+            Visualize exactly where your shots land with detailed dispersion
+            patterns for each club. Gain insights into your consistency and
+            accuracy that the standard Garmin app doesn't provide.
           </p>
           <img
-            alt="Screenshot showing the Shot Dispersion graph in R10Progress for Garmin Approach R10 Golf Radar"
+            alt="R10Progress golf shot dispersion analysis showing accurate landing patterns from Garmin R10 data"
             src="/assets/shotdispersion.png"
+            loading="lazy"
+            width="600"
+            height="400"
           />
         </div>
         <div>
-          <h4>Shot Scatter Plot</h4>
+          <h3>Golf Swing Correlation Analysis</h3>
           <p>
-            See the shot scatter plot of your shots and compare the relationship
-            between two data points to see if there is a correlation between
-            them. For example, you can compare the relationship between your
-            club speed and shot distance or maybe your club path and the
-            sidespin or deviation distance!
+            Discover the relationships between different aspects of your golf
+            swing. Learn whether increasing club head speed actually improves
+            your distance, and other crucial insights for game improvement.
           </p>
           <img
-            alt="Screenshot showing the Shot Scatter Plot in R10Progress for Garmin Approach R10 Golf Radar"
+            alt="R10Progress golf swing correlation charts analyzing relationships between different swing metrics"
             src="/assets/shotscatterplot.png"
+            loading="lazy"
+            width="600"
+            height="400"
           />
         </div>
         <div>
-          <h3>Table views</h3>
+          <h3>Comprehensive Golf Data Organization</h3>
           <p>
-            Track your shots and averages over table views. See your data in a
-            compact and easy to read way.
+            Access all your Garmin R10 shot data in one centralized location,
+            with powerful sorting and filtering options. Perfect for detailed
+            analysis or sharing progress with your golf instructor.
           </p>
           <img
-            alt="Screenshot of the table view in R10Progress for Garmin Approach R10 Golf Radar"
+            alt="R10Progress organized golf data tables showing comprehensive Garmin R10 statistics"
             src="/assets/averagestable.png"
+            loading="lazy"
+            width="600"
+            height="400"
           />
         </div>
         <div>
-          <h3>Goal Setting</h3>
+          <h3>Golf Improvement Goal Tracking</h3>
           <p>
-            Set goals for yourself and track your progress towards them. Stay
-            motivated and focused on your goals.
+            Set realistic, data-driven golf improvement goals based on your
+            actual performance metrics. Track your progress over time and
+            celebrate meaningful achievements in your golf journey.
           </p>
           <img
-            alt="Screenshot of the goal setting page in R10Progress for Garmin Approach R10 Golf Radar"
-            src="/images/goals.png"
-            alt="Goal Setting"
+            alt="R10Progress golf improvement goal tracking showing progress metrics for Garmin R10 users"
+            src="/assets/goals.png"
+            loading="lazy"
+            width="600"
+            height="400"
           />
         </div>
       </div>
     </section>
-    <section id="releases">
-      <h2>Releases</h2>
+
+    <section id="ai-feature" aria-label="AI Golf Analysis">
+      <h2>AI-Powered Golf Swing Analysis for Garmin R10 Users</h2>
       <p>
-        R10Progress is under active development. If you have feature requests or
-        find issues, be sure to mail me using the mail below! You can read more
-        about the latest releases
-        <a href="/release">here</a>.
+        Take your golf game even further with my AI-powered swing analysis that
+        provides personalized tips based on your unique Garmin R10 data
+        patterns. This advanced feature delivers insights similar to what you'd
+        get from a professional golf coach.
+      </p>
+      <p>
+        The AI analysis feature is available for a small donation (about $5, the
+        price of a coffee) to help cover the API costs while keeping the core
+        R10Progress platform completely free for all golfers.
+      </p>
+      <p class="highlight-box">
+        <strong>100% Optional Enhancement:</strong> All core R10Progress golf analytics
+        features remain completely free forever. The AI analysis is simply an additional
+        tool for those wanting even deeper insights.
+      </p>
+    </section>
+
+    <section id="releases" aria-label="R10Progress Updates">
+      <h2>Continuous Improvement for Garmin R10 Analytics</h2>
+      <p>
+        I'm constantly evolving R10Progress with new features and improvements
+        based on feedback from the community of Garmin R10 users. The
+        open-source approach means anyone can contribute ideas or code!
+      </p>
+      <p>
+        View the latest updates or suggest new features on the <a
+          href="/release">release page</a
+        >. For developers and technically-minded golfers, visit the <a
+          href="https://github.com/r10progress/r10progress">GitHub repository</a
+        > to explore the code or contribute to the project.
+      </p>
+    </section>
+
+    <section id="cta" aria-label="Call to Action">
+      <h2>Start Improving Your Golf Game with R10Progress Today</h2>
+      <p>
+        Join hundreds of Garmin R10 users who are transforming their golf game
+        with this free, comprehensive analytics platform. No subscriptions, no
+        hidden fees.
+      </p>
+      <a
+        class="button main"
+        href="https://app.r10progress.com"
+        aria-label="Begin using R10Progress"
+      >
+        Analyze Your Garmin R10 Data Now
+      </a>
+      <p class="open-source-note">
+        Developed with ❤️ by a passionate golfer just like you
       </p>
     </section>
   </div>
@@ -107,5 +223,77 @@ import BaseLayout from "../layout/BaseLayout.astro";
     & > *:nth-child(even) {
       background-color: #f9f9f9;
     }
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .feature-list {
+    margin: 1.5rem 0;
+    padding-left: 1.5rem;
+  }
+
+  .feature-list li {
+    margin-bottom: 0.5rem;
+  }
+
+  .testimonial-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  .testimonial {
+    background: #f0f0f0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    font-style: italic;
+  }
+
+  .testimonial-author {
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+
+  #cta {
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+
+  .open-source-note {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    opacity: 0.9;
+  }
+
+  .highlight {
+    background-color: #fffacd;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+
+  @media (max-width: 768px) {
+    .testimonial-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  .small-text {
+    font-size: 0.8rem;
+  }
+
+  .highlight-box {
+    background-color: #f0f8ff;
+    border-left: 4px solid #0066cc;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-radius: 0 4px 4px 0;
   }
 </style>

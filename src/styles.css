@@ -40,6 +40,8 @@ section {
   max-width: 600px;
   margin: 20px auto;
   display: block;
+  object-fit: contain;
+  height: auto;
 }
 
 #contact {
