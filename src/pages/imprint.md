@@ -4,7 +4,7 @@
 
 **Company Name:** Aron Schüler IT Services
 
-**Address:** Karlstr. 17, 50679 Cologne, Germany
+**Address:** Karlstraße 17, 50679 Cologne, Germany
 
 **Phone:** +4915221060650
 
