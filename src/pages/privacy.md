@@ -1,6 +1,6 @@
 # Privacy Policy
 
-**Last updated: 26 August 2026**
+**Last updated: 27 August 2026**
 
 This Privacy Notice for **Aron Schüler IT Services** ("R10Progress", "we", "us", or "our") describes how and why we access, collect, store, use, and/or share ("process") your personal information when you use our services ("Services"), including when you:
 
@@ -340,7 +340,9 @@ We are the controller of the personal data described in this notice. We are not 
 
 You have the right to request access to the personal information we collect from you, details about how we have processed it, correction of inaccuracies, or deletion of your personal information. You may also have the right to withdraw your consent to our processing. These rights may be limited in some circumstances by applicable law.
 
-You can review and change much of your data directly in the app: log in at https://app.r10progress.com, and use the settings and sessions screens to view, edit, or remove your data. To request an export of your data, or deletion of your account and all associated data, email aron@r10progress.com and we will action it.
+You can do this yourself in the app: log in at https://app.r10progress.com and open **Settings → Your Data**, where you can download a copy of everything we store for your account as a JSON file, or permanently delete your account together with your uploaded sessions, AI reports, and settings. Deletion takes effect immediately and cannot be undone. Records of donations and memberships are retained in anonymized form where tax law requires it, as described in section 8.
+
+You can also review and change individual sessions and settings from the settings and sessions screens. If you would rather we handle a request for you, email aron@r10progress.com.
 
 ---
 
